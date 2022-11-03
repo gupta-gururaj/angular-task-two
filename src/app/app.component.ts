@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ContentChild } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,9 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  value = '';
+  myOption = '';
 
-  onSelectAdded(object: {dropdownValue: string}) {
-    this.value = object.dropdownValue;
+  onSelectAdded(object: { dropdownValue: string }) {
+    this.myOption = object.dropdownValue;
   }
 }
