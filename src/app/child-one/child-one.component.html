@@ -1,0 +1,5 @@
+<select (change)="onSelect(myselect.value)" #myselect>
+  <option *ngFor="let carBrand of allCarBrands" value="{{ carBrand }}">
+    {{ carBrand }}
+  </option>
+</select>
