@@ -1,4 +1,4 @@
-import { Component, ContentChild } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +7,10 @@ import { Component, ContentChild } from '@angular/core';
 })
 export class AppComponent {
   myOption = '';
+
+  setSelectedOption(object: any) {
+    this.myOption = object;
+  }
 
   onSelectAdded(object: { dropdownValue: string }) {
     this.myOption = object.dropdownValue;

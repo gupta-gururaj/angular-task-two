@@ -1,4 +1,10 @@
-<p>Car Brands :</p>
+<p id="child-p">Child Component</p>
 <select (change)="onSelect(myselect.value)" #myselect>
-  <option *ngFor="let carBrand of allCarBrands" value="{{ carBrand }}">{{ carBrand }}</option>
+  <option
+    *ngFor="let carBrand of allCarBrands"
+    [selected]="selectedOption == carBrand"
+    value="{{ carBrand }}"
+  >
+    {{ carBrand }}
+  </option>
 </select>

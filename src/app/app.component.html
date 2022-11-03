@@ -1,3 +1,8 @@
-<app-child-one (dropdownSelect)="onSelectAdded($event)"></app-child-one>
+<app-child-one
+  (dropdownSelect)="onSelectAdded($event)"
+  (selectedOptionValue)="setSelectedOption($event)"
+></app-child-one>
 
 <input [ngClass]="{ 'ml-20': true }" type="text" value="{{ myOption }}" />
+
+<p id="app-p">I'm in parent component and my color should be blue</p>
