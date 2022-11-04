@@ -19,7 +19,7 @@ export class ChildOneComponent implements OnInit {
 
   @Output() dropdownSelect = new EventEmitter<{ dropdownValue: string }>();
 
-  @Output() selectedOptionValue = new EventEmitter<any>();
+  @Output() selectedOptionValue = new EventEmitter<string>();
 
   constructor() {}
 
